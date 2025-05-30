@@ -12,17 +12,16 @@ This repository contains the implementation of AES-128 encryption and two crypta
 |
 |-- CPA Attack/                          # CPA (Correlation Power Analysis) attack
 |   |-- traces.npy                       # Power consumption traces (NumPy format)
-|   |-- correlation figures/             # Correlation figures obtained during attack
-|   |-- prediction matrices/             # Prediction matrices for attack analysis
+|  
 |   |-- attack_code/                      # Attack implementation
-|       |-- CPA Attack code full key  guess.py              # Python script to calculate the recovered key
-|       |-- GenerateAll16PredictionMatrices.jl       # Julia script to generate prediction matrices
-|       |-- PlotAll16Correlations.jl          # Julia script to plot correlation figures
+|       |-- CPA Attack code full key  guess.py             # Python script to calculate the recovered key
+|       |-- GenerateAll16PredictionMatrices.py      # Julia script to generate prediction matrices
+|       |-- PlotAll16Correlations.py        # Julia script to plot correlation figures
 |
 |-- DFA Attack/                           # DFA (Differential Fault Analysis) attack
 |   |-- DFA Attack code.py                     # Python script for DFA attack
 |   |-- reverse key schedule.py           # Script to compute the master key
-|   |-- entropy figures/                   # Entropy figures generated during attack
+|
 |   |-- ciphered-faulty-npy/                # Correct and faulty ciphertexts (NumPy format)
 |
 
